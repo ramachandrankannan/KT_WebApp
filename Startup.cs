@@ -42,6 +42,9 @@ namespace KT_WebApplication
 
             app.UseAuthorization();
 
+            app.UseSwagger();
+            app.UseSwaggerUI();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
