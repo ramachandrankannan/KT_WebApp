@@ -38,12 +38,17 @@ namespace KT_WebApplication
 
             app.UseHttpsRedirection();
 
+            app.UseAuthorization();
+
+
             app.UseRouting();
 
             app.UseAuthorization();
 
             app.UseSwagger();
             app.UseSwaggerUI();
+
+            app.UseMvc();
 
             app.UseEndpoints(endpoints =>
             {
